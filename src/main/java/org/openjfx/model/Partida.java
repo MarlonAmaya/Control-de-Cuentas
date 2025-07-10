@@ -4,6 +4,7 @@ import java.util.Date;
 
 public class Partida {
     private Integer id;
+    private String partidaNombre;
     private Date fecha;
     private String concepto;
     private Cuenta cuentaRetiro;
@@ -16,7 +17,6 @@ public class Partida {
 
     }
     
-    /*
     public Partida(Integer id, Date fecha, String concepto, Cuenta cuentaRetiro, Cuenta cuentaEntrada,
             double valorInicialRetiro, double valorInicialEntrada, double cantidadMovimiento) {
         this.id = id;
@@ -28,7 +28,6 @@ public class Partida {
         this.valorInicialEntrada = valorInicialEntrada;
         this.cantidadMovimiento = cantidadMovimiento;
     }
-    */
 
     public Integer getId() {
         return id;
@@ -77,5 +76,11 @@ public class Partida {
     }
     public void setCantidadMovimiento(double cantidadMovimiento) {
         this.cantidadMovimiento = cantidadMovimiento;
+    }
+    public String getPartidaNombre() {
+        return partidaNombre;
+    }
+    public void setPartidaNombre(String nombre) {
+        this.partidaNombre = nombre;
     }
 }

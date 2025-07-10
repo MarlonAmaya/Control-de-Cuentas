@@ -3,22 +3,21 @@ package org.openjfx.model;
 public class Cuenta {
     private Integer id;
     private String codigo;
-    private String nombre;
+    private String cuentaNombre;
     private double saldo = 0;
     private Cuenta cuentaPadre = null;
 
     public Cuenta(){
 
     }
-/*
+
     public Cuenta(Integer id, String codigo, String nombre, double saldo, Cuenta cuentaPadre){
         this.id = id;
         this.codigo = codigo;
-        this.nombre = nombre;
+        this.cuentaNombre = nombre;
         this.saldo = saldo;
         this.cuentaPadre = cuentaPadre;
     }
-*/
 
     public Integer getId() {
         return id;
@@ -36,12 +35,12 @@ public class Cuenta {
         this.codigo = codigo;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getCuentaNombre() {
+        return cuentaNombre;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setCuentaNombre(String nombre) {
+        this.cuentaNombre = nombre;
     }
 
     public double getSaldo() {
